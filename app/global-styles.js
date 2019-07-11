@@ -25,6 +25,21 @@ const GlobalStyle = createGlobalStyle`
   label {
     font-family: Georgia, Times, 'Times New Roman', serif;
     line-height: 1.5em;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .tabless {
+    margin: 182px
+  }
+  .tabless tr th {
+    font-size: 16px;
+  }
+  .details {
+    text-align: center;
+  }
+  h2 {
+    margin: 100px 0 20px;
+    text-align: center;
   }
 `;
 

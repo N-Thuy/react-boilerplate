@@ -8,15 +8,12 @@ import produce from 'immer';
 import { CHANGE_LOCALE } from './constants';
 import { DEFAULT_LOCALE } from '../../i18n';
 
-export const initialState = [
-  {
-    locale: DEFAULT_LOCALE,
-  },
-];
+export const initialState = {
+  locale: DEFAULT_LOCALE,
+};
 
 /* eslint-disable default-case, no-param-reassign */
 const languageProviderReducer = (state = initialState, action) =>
-  // eslint-disable-next-line consistent-return
   produce(state, draft => {
     switch (action.type) {
       case CHANGE_LOCALE:
